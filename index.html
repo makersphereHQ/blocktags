@@ -1,0 +1,70 @@
+---
+# Main Application
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="noarchive, noodp">
+    <title>Blocktags - Donate to {{ site.name | xml_escape }}</title>
+    <meta name="description" content="{{ site.desc | xml_escape }}">
+    <link rel="apple-touch-icon" href="/assets/img/{{ site.icon }}">
+    <link rel="shortcut icon" href="/assets/img/{{ site.favicon }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    <meta name="twitter:title" content="Blocktags - Donate to {{ site.name | xml_escape }}">
+    <meta name="twitter:creator" content="@MakersphereHQ">
+    <meta name="twitter:description" content="{{ site.desc | xml_escape }}">
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/img/{{ site.banner }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:title" content="Blocktags - Donate to {{ site.name | xml_escape }}">
+    <meta property="og:description" content="{{ site.desc | xml_escape }}">
+    <meta property="og:site_name" content="Blocktags">
+    <meta property="og:image" content="{{ site.url }}/assets/img/{{ site.banner }}">
+    <meta property="og:type" content="website">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Blocktags">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="all">
+    <link rel="stylesheet" href="/assets/css/main.css" media="all">
+</head>
+<body class="body--is-app">
+    <header class="header animated fadeInDown">
+        <div class="header__content">
+            <span class="header__logo"><i class="fa fa-btc" style="font-size:1.15em;vertical-align:bottom;"></i>locktags</span>
+        </div>
+    </header>
+    <main class="app animated fadeInRight">
+        <div class="app__content">
+            <section class="app__display app__display--is-result app__display--is-hidden animated" id="blocktags-display-result">
+                <span class="app__message app__message--is-big"><i class="fa fa-check-circle"></i></span>
+                <span class="app__message">Thank you&#33; We&#39;ve received <strong id="blocktags-btc"></strong> BTC. &#127881;</span>
+
+            </section>
+            <section class="app__display app__display--is-check app__display--is-hidden animated" id="blocktags-display-check">
+                <span class="app__message"><i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i> Checking for payment...</span>
+                <a id="blocktags-qrcode-link"><div class="app__qrcode" id="blocktags-qrcode"></div></a>
+            </section>
+            <section class="app__display app__display--is-front animated" id="blocktags-display-front">
+                <div class="app__amount" id="blocktags-amount-block">
+                    <div class="app__amount-currency" id="blocktags-amount-currency">$</div>
+                    <input class="app__amount-input" id="blocktags-amount" oninput="doAdjustment(this);" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="tel" placeholder="0" autocomplete="off" maxlength="4">
+                </div>
+                <button class="app__btn" id="blocktags-btn" data-address="{{ site.blockchain_address }}" onclick="void(0)">Donate</button>
+            </section>
+        </div>
+    </main>
+    <footer class="footer animated fadeInUp">
+        <div class="footer__content">
+                <span class="footer__notice">A Makersphere Labs <sup style="color:rgba(255, 255, 255, 0.9);">Thing</sup></span>
+        </div>
+    </footer>
+    <script src="/assets/js/vendor/davidshimjs/qrcode.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
