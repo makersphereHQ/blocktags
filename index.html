@@ -11,19 +11,19 @@
     <meta name="robots" content="noarchive, noodp">
     <title>Blocktags - Donate to {{ site.name | xml_escape }}</title>
     <meta name="description" content="{{ site.desc | xml_escape }}">
-    <link rel="apple-touch-icon" href="/assets/img/{{ site.icon }}">
-    <link rel="shortcut icon" href="/assets/img/{{ site.favicon }}">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/{{ site.icon }}">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/{{ site.favicon }}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter_username }}">
     <meta name="twitter:title" content="Blocktags - Donate to {{ site.name | xml_escape }}">
     <meta name="twitter:creator" content="@MakersphereHQ">
     <meta name="twitter:description" content="{{ site.desc | xml_escape }}">
-    <meta name="twitter:image:src" content="{{ site.url }}/assets/img/{{ site.banner }}">
-    <meta property="og:url" content="{{ site.url }}">
+    <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.banner }}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}">
     <meta property="og:title" content="Blocktags - Donate to {{ site.name | xml_escape }}">
     <meta property="og:description" content="{{ site.desc | xml_escape }}">
     <meta property="og:site_name" content="Blocktags">
-    <meta property="og:image" content="{{ site.url }}/assets/img/{{ site.banner }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.banner }}">
     <meta property="og:type" content="website">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="all">
-    <link rel="stylesheet" href="/assets/css/main.css" media="all">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" media="all">
 </head>
 <body class="body--is-app">
     <header class="header animated fadeInDown">
@@ -64,7 +64,7 @@
                 <span class="footer__notice">A Makersphere Labs <sup style="color:rgba(255, 255, 255, 0.9);">Thing</sup></span>
         </div>
     </footer>
-    <script src="/assets/js/vendor/davidshimjs/qrcode.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/vendor/davidshimjs/qrcode.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
 </html>
