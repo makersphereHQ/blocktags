@@ -1,4 +1,8 @@
 # Blocktags
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://raw.githubusercontent.com/makersphereLabs/blocktags/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/makersphereLabs/blocktags.svg?maxAge=2592000)](https://github.com/makersphereLabs/blocktags)
+[![Github All Releases](https://img.shields.io/github/downloads/makersphereLabs/blocktags/total.svg?maxAge=2592000)](https://github.com/makersphereLabs/blocktags/releases)
+[![Status](https://img.shields.io/badge/status-laboratory-f0466e.svg)](https://makersphere.org)
 
 Donations powered by Bitcoins!
 This app allows you to receive donations to your Blockchain.info wallet.
