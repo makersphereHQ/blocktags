@@ -1,12 +1,12 @@
 # Blocktags
-# Version @1.0.0
+# Version @1.0.1
 
 baseurl: "/blocktags"
 
 # Blocktags settings
 name: Makersphere
 desc: "Blocktags allows you to donate to nonprofit organizations using Bitcoins."
-url: https://makersphere.org/blocktags
+url: https://labs.makersphere.org/blocktags
 banner: blocktags__banner@2x.png
 icon: blocktags__icon@2x.png
 favicon: blocktags__favicon@1x.png
